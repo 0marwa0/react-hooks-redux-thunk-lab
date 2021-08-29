@@ -7,9 +7,7 @@ function Cats() {
   const catPics=useSelector(state=>state.entities)
    useEffect(()=>{
     dispatch(fetchCats())
-    console.log("in app`");
       },[dispatch])
-console.log(catPics,"here we go");
   return (
     <div>
       <h1>CatBook</h1>

@@ -18,7 +18,6 @@ export default function catsReducer(state=initialState,action) {
         case "cats/catsLoading":
         return {...state,status:"loading"}
          case "cats/catsLoaded":
-    console.log("switch is working ");
         return {...state,entities:action.payload,status:"idle"}
         default:
         return state
