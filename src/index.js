@@ -10,5 +10,8 @@ import {composeWithDevTools} from "redux-devtools-extension"
 const composedEnhancer =composeWithDevTools(applyMiddleware(thunkMiddleware)) 
 const store =createStore(catReducer,composedEnhancer)
 ReactDOM.render(
-<Provider store={store}>
-<App /></Provider>, document.getElementById("root"));
+ <Provider store={store}>
+
+  <App />
+  
+  </Provider>, document.getElementById("root"));
